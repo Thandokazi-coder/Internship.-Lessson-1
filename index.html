@@ -7,51 +7,42 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div>
+<div class="main">
     <h1>
         Temperature Converter
-    </h1>
-</div> 
-<div>
-    <form>
-    <div>
-        <label for="name">Degrees</label>
-    </div>
-        <input type="text" id="degrees" required>
-   
-    <div>
-        <label for="name">Type</label>
-    </div>
+    </h1>  
 
-    <div>
-    <select>
-        <option value="">--Please choose an option--</option>
-        <option value="celcuis" >Celcuis</option>
-        <option value="Fahrenheit">Fahrenheit</option>
-        <option value="kelvin">Kelvin</option>
-    </select>
-    </div>
+  <form>
+    <div id="container">
+      <div class="form-group">
+        <label for="degrees">Degrees</label>
+        <input type="text" id="degrees" required />
+      </div>
 
-    <div>
-      <label for="name">Results</label>
-    </div>
-    
-    <div>
-      <input type="text" id="results" />
-    </div>
+      <div class="form-group">
+        <label for="type">Type</label>
+        <select id="type" required>
+          <option value="">--Please choose an option--</option>
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </div>
 
-    <div>
-      <label  for="name"></label>
-      <input type="button"value="Convert" />
+      <div class="form-group">
+        <label for="results">Results</label>
+        <input type="text" id="results" readonly />
+      </div>
+
+      <div class="form-group">
+        <input type="button" value="Convert" id="button" />
+      </div>
     </div>
-    </form>
+  </form>
+
+  <footer>
+    <script src="main.js"></script>
+  </footer>
 </div>
-    
-
 
     
-    <footer>
-        <script src="main.js"></script>
-    </footer>
-</body>
-</html>
